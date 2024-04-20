@@ -1,7 +1,7 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   color: #665544;
-  padding: 22px;
+  padding: 0 15% 0 15%;
 }
 h1{
   text-align: center;
@@ -11,10 +11,14 @@ h1{
 }
 h2,
 p {
-  padding: 12px;
-  line-height: 2em;
+  font-family: 'Dancing Script', cursive;
+  font-weight: normal;
+  font-style: normal;
+  font-size:200%;
 }
-i,
+i{
+  color:darkgreen;
+}
 a,
 a:hover,
 a:visited {
