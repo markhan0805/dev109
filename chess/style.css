@@ -17,10 +17,9 @@
 }
 
 #container {
- margin-top:20%;
- margin-left:10%;
- margin-right:10%;
- margin-bottom:5%;
+ position: relative; 
+ margin: auto; 
+ top:100px;
  width:500px;
 }
 
@@ -43,7 +42,7 @@
 }
 
 img {
- margin-left: 5px;
+ margin-left: 15px;
  margin-top:10px;
  }
 
