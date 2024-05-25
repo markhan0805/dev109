@@ -9,14 +9,14 @@ function validateForm() {
 
     // First Name Validation
     var firstName = document.getElementById("FirstName").value;
-    if (firstname === "" || firstname.length > 20 || !/^[A-Za-z]+$/.test(firstname)) {
+    if (firstName === "" || firstName.length > 20 || !/^[A-Za-z]+$/.test(firstName)) {
         document.getElementById("fname").innerHTML = "<p>The firstname is required and cannot be greater than 20 characters.</p>";
         isValid = false;
     }
 
     // Last Name Validation
     var lastName = document.getElementById("LastName").value;
-    if (lastname === "" || lastname.length > 50 || !/^[A-Za-z]+$/.test(lastname)) {
+    if (lastName === "" || lastName.length > 50 || !/^[A-Za-z]+$/.test(lastName)) {
         document.getElementById("lname").innerHTML = "<p>The lastname is required and cannot be greater than 50 characters.</p>";
         isValid = false;
     }
