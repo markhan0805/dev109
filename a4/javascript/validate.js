@@ -47,9 +47,8 @@ function validateForm() {
 
     // Password Validation
     var password = document.getElementById("Password").value;
-    var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{1,7}$/;
-    if (!password.match(passwordRegex)) {
-        document.getElementById("passworderror").innerHTML = "<p>Password must be 1-7 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character.</p>";
+    if (password.length < 1 || password.length > 7) {
+        errorMessages += "<p>Password must be between 1 to 7 characters.</p>";
         isValid = false;
     }
 
