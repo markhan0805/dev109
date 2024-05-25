@@ -9,14 +9,14 @@ function validateForm() {
 
     // First Name Validation
     var firstName = document.getElementById("FirstName").value;
-    if (firstName === "" || firstName.length > 20) {
+    if (firstname === "" || firstname.length > 20 || !/^[A-Za-z]+$/.test(firstname)) {
         document.getElementById("fname").innerHTML = "<p>The firstname is required and cannot be greater than 20 characters.</p>";
         isValid = false;
     }
 
     // Last Name Validation
     var lastName = document.getElementById("LastName").value;
-    if (lastName === "" || lastName.length > 50) {
+    if (lastname === "" || lastname.length > 50 || !/^[A-Za-z]+$/.test(lastname)) {
         document.getElementById("lname").innerHTML = "<p>The lastname is required and cannot be greater than 50 characters.</p>";
         isValid = false;
     }
@@ -32,8 +32,7 @@ function validateForm() {
 
     // Phone Validation
     var phone = document.getElementById("Phone").value;
-    var phoneRegex = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/;
-    if (!phone.match(phoneRegex)) {
+    if (!phone || isNaN(phone) || phone.length > 15 || !/^\d+$/.test(phone)) {
         document.getElementById("phoneerror").innerHTML = "<p>Invalid phone number.</p>";
         isValid = false;
     }
