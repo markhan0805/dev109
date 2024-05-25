@@ -48,7 +48,7 @@ function validateForm() {
     // Password Validation
     var password = document.getElementById("Password").value;
     if (password.length < 1 || password.length > 7) {
-        errorMessages += "<p>Password must be between 1 to 7 characters.</p>";
+        document.getElementById("passworderror").innerHTML = "<p>Password must be between 1 to 7 characters.</p>";
         isValid = false;
     }
 
