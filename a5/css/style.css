@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 600px; 
+    height: 400px; 
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px;
+}
+
+.slideshow-container img {
+    width: 100%; 
+    height: 80%; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;
+}
+.buttons {
+    margin-top: 10px;
+}
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+#image-description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.validators {
+    margin-top: 20px;
+}
+
+.validators img {
+    margin: 0 10px;
+    width: 50px; 
+    height: auto;
+}
