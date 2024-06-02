@@ -1,1 +1,19 @@
+body {
+    height: 200px;
+    background: beige;
+}
+.dot {
+    border-radius: 50%;
+    position: absolute;
+}
+.controls {
+    margin-top: 20px;
+}
+label {
+    margin-right: 10px;
+}
+input[type="color"],
+input[type="number"] {
+    margin-right: 20px;
+}
 
