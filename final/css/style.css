@@ -42,6 +42,32 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.course {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.course h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.course p {
+    margin-bottom: 10px;
+}
+
+.course a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.course a:hover {
+    text-decoration: underline;
+}
+
 footer {
     text-align: center;
     padding: 20px 10px;
