@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me - My Portfolio</title>
     <link rel="stylesheet" href="https://markhan0805.github.io/dev109/final/css/style.css">
+<script>
+        function validateForm() {
+            var name = document.forms["myContact"]["name"].value;
+            var email = document.forms["myContact"]["email"].value;
+            var comment = document.forms["myContact"]["comment"].value;
+            
+            if (name == "" || email == "" || comment == "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+            return true;
+        }
+</script>
 </head>
 <body>
     <header>
@@ -23,13 +36,15 @@
     </header>
     <main>
         <h1>Contact Me</h1>
-        <form action="https://markhan0805.github.io/dev109/final/thankyou.html" method="get">
+        <form action="https://markhan0805.github.io/dev109/final/thankyou.html" method="get" name="myContact" onsubmit="return validateForm()">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br><br>
+            <input type="text" id="name" name="name" required><br><br>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required><br><br>
             <label for="comment">Comment:</label>
-            <textarea id="comment" name="comment"></textarea><br><br>
+            <textarea id="comment" name="comment" required></textarea><br><br>
             <input type="submit" value="Submit">
         </form>
     </main>
