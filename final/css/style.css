@@ -3,6 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+.artifact {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+}
+
+.artifact-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.artifact-description {
+    flex: 1;
+}
+
+.artifact-description h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.artifact-description p {
+    margin-bottom: 10px;
+}
+
+.artifact-description a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.artifact-description a:hover {
+    text-decoration: underline;
+}
 
 body {
     font-family: Arial, sans-serif;
